@@ -1,0 +1,185 @@
+/* VARIABLES */
+
+$color-one: #e1b12c;
+$color-two: #f5f6fa;
+$color-three: #2f3640;
+$color-four: #7f8fa6;
+
+$font-one: 'MonteCarlo', cursive;
+$font-two: 'Roboto', sans-serif;
+$font-three: 'STIX Two Text', serif;
+
+/* GLOBAL */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 20rem;
+    margin: 3rem auto 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: $font-two;
+    font-weight: 700;
+}
+
+.btn-one {
+    color: $color-two;
+    background-color: $color-one;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: $font-two;
+    margin: 1rem auto;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    color: $color-three;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: $color-four;
+    font-family: $font-three;
+    text-align: center;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    /*border: 1px red solid;  positioning border*/
+    .card-logo {
+        margin: auto;
+        width: 8rem;
+        height: 8rem;
+        line-height: 7rem;
+        border: 0.5rem $color-one solid;
+        border-radius: 50%;
+        color: $color-one;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    .card-title {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: $font-two;
+        margin: 1rem auto;
+        padding: 2rem 0 0 0;
+        text-align: center;
+        color: $color-three;
+    }
+    .card-text {
+        font-size: 1rem;
+        font-family: $font-two;
+        margin: 1rem auto;
+        padding: 1rem 0 0 0;
+        text-align: center;
+        color: $color-four;
+    }
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0 2rem;
+    background-color: transparent;
+    color: $color-two;
+    z-index: 999;
+    .nav-logo {
+        display: inline-block;
+        font-family: $font-one;
+        font-size: 4rem;
+        font-weight: 700;
+        color: $color-one;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        .nav-list-item {
+            display: inline-block;
+            padding: 0 2rem;
+            font-family: $font-two;
+            a {
+                color: $color-two;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/* HEADER */
+
+.splash {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: $color-two;
+    .splash-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .splash-inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 70%;
+        text-align: center;
+        color: $color-two;
+        .splash-title {
+            font-size: 3rem;
+            font-style: italic;
+        }
+        .splash-subtitle {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: $font-two;
+        }
+    }
+}
+
+/* SECTION: SERVICES */
