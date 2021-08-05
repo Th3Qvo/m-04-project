@@ -216,3 +216,36 @@ a {
 .portfolio {
     background-color: $color-five;
 }
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: $font-two;
+    font-weight: 700;
+    .footer-text {
+        align-self: flex-start;
+        margin: 1rem;
+        align-self: center;
+    }
+    .btn-tab {
+        display: flex;
+        flex: row wrap;
+        justify-content: flex-end;
+        flex-grow: 3;
+        padding-right: 4rem;
+        .footer-btn {
+            background-color: $color-three;
+            color: $color-five;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 3rem;
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem;
+        }
+    }
+}
