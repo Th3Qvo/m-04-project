@@ -230,6 +230,7 @@ a {
         align-self: flex-start;
         margin: 1rem;
         align-self: center;
+        padding-left: 4rem;
     }
     .btn-tab {
         display: flex;
@@ -246,6 +247,70 @@ a {
             width: 3rem;
             height: 3rem;
             margin: 1rem;
+        }
+    }
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1023px) {
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 50%;
+        margin: 1rem auto;
+        padding: 0 1rem;
+        background-color: transparent;
+        color: $color-two;
+        z-index: 999;
+        .nav-logo {
+            display: inline-block;
+            font-family: $font-one;
+            font-size: 4rem;
+            font-weight: 700;
+            color: $color-one;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            padding: 0;
+            .nav-list-item {
+                display: inline-block;
+                padding: 0 2rem;
+                font-family: $font-two;
+                a {
+                    color: $color-two;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .card {
+        .card-title {
+            font-size: 1.8rem;
+        }
+    }
+    .footer {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-items: center;
+        justify-content: center;
+        .footer-text {
+            font-size: 1rem;
+            margin: 1rem;
+            align-self: center;
+            padding: 0;
+        }
+        .btn-tab {
+            display: flex;
+            flex: row wrap;
+            justify-content: center;
+            padding: 0;
         }
     }
 }
